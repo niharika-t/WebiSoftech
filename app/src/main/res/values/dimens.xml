@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Screen Padding -->
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="screen_padding_small">16dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">64dp</dimen>
+
+    <!-- Drawer -->
+    <dimen name="drawer_width">300dp</dimen>
+    <dimen name="drawer_header_height">190dp</dimen>
+    <dimen name="drawer_item_height">52dp</dimen>
+
+
+    <!-- Logo -->
+    <dimen name="logo_size">90dp</dimen>
+
+    <!-- Banner -->
+    <dimen name="banner_height">210dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_height">120dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_title">26sp</dimen>
+    <dimen name="text_heading">20sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_body">13sp</dimen>
+    <dimen name="text_small">11sp</dimen>
+
+</resources>

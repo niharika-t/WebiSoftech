@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <!-- Gold Accent -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#D8B65C" />
+
+        <ImageView
+            android:id="@+id/imgSubscriptionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@color/green_light"
+            android:scaleType="centerCrop"
+            android:contentDescription="Subscription category image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:id="@+id/tvSubscriptionCategoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category Title"
+                android:textColor="#352449"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvSubscriptionCategoryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Explore the benefits and experiences available in this category."
+                android:textColor="#777181"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="3"
+                android:ellipsize="end" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="12dp"
+                android:background="#EEE8F4" />
+
+            <TextView
+                android:id="@+id/tvSubscriptionCategoryAction"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Explore Details    ›"
+                android:textColor="@color/green_light"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.03" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

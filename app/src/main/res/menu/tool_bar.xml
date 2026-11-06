@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_phone"
+        android:icon="@drawable/outline_add_call_24"
+        android:title="Call"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_mail"
+        android:icon="@drawable/baseline_email_24"
+        android:title="Email"
+        app:showAsAction="always" />
+
+</menu>

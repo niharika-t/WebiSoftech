@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="5dp"
+    android:paddingTop="10dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="78dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <!-- Kept for compatibility with the existing adapter -->
+        <ImageView
+            android:id="@+id/ivCategoryImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:contentDescription="@null" />
+
+        <!-- Purple accent -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="14dp"
+            android:background="@color/colorPrimary" />
+
+        <!-- Category name -->
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Resort Category"
+            android:textColor="#211E27"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- Right arrow -->
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_resort_arrow"
+            android:gravity="center"
+            android:text="›"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:includeFontPadding="false" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

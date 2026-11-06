@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerItem"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Item Icon -->
+    <ImageView
+        android:id="@+id/ivDrawerIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_menu" />
+
+    <!-- Item Title -->
+    <TextView
+        android:id="@+id/tvDrawerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:text="Home"
+        android:textColor="#222222"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

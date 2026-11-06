@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:background="@color/fragment_bg">
+
+
+        <!-- Heading -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:elevation="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOLIDAY SERVICE CLUB"
+                android:textColor="#E9D9B5"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"/>
+
+        <TextView
+            android:id="@+id/tvSubscriptionHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ Explore Subscriptions"
+            android:textColor="@color/green_light"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubscriptionSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Discover exclusive holiday experiences."
+            android:textColor="#E9D9B5"
+            android:textSize="10sp" />
+
+        <!-- Gold Divider -->
+        <View
+            android:layout_width="55dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="#E9D9B5" />
+
+    </LinearLayout>
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progressSubscription"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+    <!-- Empty State / Error -->
+    <TextView
+        android:id="@+id/tvSubscriptionMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textColor="#6A4E9E"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!-- Category and Detail List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSubscriptions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

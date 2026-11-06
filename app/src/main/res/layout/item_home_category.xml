@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgHomeCategory"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/category_image_bg"
+        android:clipToOutline="true"
+        android:contentDescription="Category image" />
+
+    <TextView
+        android:id="@+id/tvHomeCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Beach Resorts"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</LinearLayout>

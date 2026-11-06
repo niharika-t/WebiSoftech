@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_main"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile"/>
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_locate_us"
+            android:icon="@drawable/location"
+            android:title="@string/locate_us" />
+
+        <item
+            android:id="@+id/nav_resorts"
+            android:icon="@drawable/resorts"
+            android:title="@string/resorts" />
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/fitness"
+            android:title="@string/fitness" />
+
+        <item
+            android:id="@+id/nav_trip"
+            android:icon="@drawable/trips"
+            android:title="@string/trip_destination" />
+
+
+        <item
+            android:id="@+id/holidays"
+            android:icon="@drawable/holidays"
+            android:title="@string/holidays"/>
+
+        <item
+            android:id="@+id/subscription"
+            android:icon="@drawable/membership"
+            android:title="@string/subscription"/>
+
+
+        <item
+            android:id="@+id/payment_details"
+            android:icon="@drawable/payment"
+            android:title="@string/payment_details"/>
+
+        <item
+            android:id="@+id/blog"
+            android:icon="@drawable/blog"
+            android:title="@string/blogs"/>
+
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy_policy"/>
+
+        <item
+            android:id="@+id/terms_and_conditions"
+            android:icon="@drawable/terms_and_conditions"
+            android:title="@string/terms_and_conditions"/>
+
+        <item
+            android:id="@+id/refund_policy"
+            android:icon="@drawable/refund"
+            android:title="@string/refund_policy"/>
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login"
+            android:title="@string/login" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+
+    </group>
+
+</menu>

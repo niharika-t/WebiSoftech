@@ -1,0 +1,40 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.CountryClub"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Keep your existing theme customizations here -->
+
+        <!-- Status bar background color -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+
+        <!-- Dark status bar icons for a white background -->
+        <item name="android:windowLightStatusBar">false</item>
+
+
+    </style>
+
+    <style name="Theme.CountryClub"
+        parent="Base.Theme.CountryClub" />
+
+    <!-- Splash screen theme -->
+    <style name="Theme.CountryClub.Splash"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.CountryClub
+        </item>
+
+    </style>
+
+    <!-- Existing rounded image style -->
+    <style name="RoundedImageViewStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+</resources>

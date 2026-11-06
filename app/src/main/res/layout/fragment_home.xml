@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fragment_bg"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="28dp">
+
+        <!-- Welcome heading -->
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_holiday_service_club"
+            android:layout_marginLeft="2dp"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Welcome subtitle -->
+        <TextView
+            android:id="@+id/tvHomeSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/experience_comfort_leisure_and_luxury"
+            android:layout_marginLeft="2dp"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Resort banner -->
+        <!-- HOME IMAGE CAROUSEL -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/homeImageCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:overScrollMode="never" />
+
+        <!-- RESORTS SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏡  Resorts"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#171329"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHomeResorts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:scrollbars="none"/>
+
+            <ProgressBar
+                android:id="@+id/progressHomeResorts"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvHomeResortMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- EVENTS SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚴  Fitness"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#171329"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHomeEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:scrollbars="none"/>
+
+            <ProgressBar
+                android:id="@+id/progressHomeEvents"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvHomeEventMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- TRIP DESTINATIONS SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌍  Trip Destinations"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#171329"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHomeDestinations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:scrollbars="none"/>
+
+            <ProgressBar
+                android:id="@+id/progressHomeDestinations"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvHomeDestinationMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="#777777"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
